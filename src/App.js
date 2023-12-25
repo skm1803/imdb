@@ -1,9 +1,11 @@
 import "./App.css";
+import Header from "./components/Header/header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
       <Router>
+        <Header />
         <Routes>
           <Route index element={<h1>HELLO WORLD</h1>}></Route>
           <Route path="movie/:id" element={<h1>MOVIE DETAILS PAGE</h1>}></Route>
